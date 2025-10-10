@@ -18,7 +18,7 @@
 
 body {
     background-color: var(--bg-color);
-    background-image: url('./pattern.svg');
+    background-image: url('./public/pattern.svg');
     background-position: 700px;
     background-repeat: no-repeat;
 }
