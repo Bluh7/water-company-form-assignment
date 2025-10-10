@@ -71,6 +71,21 @@ main {
     transition: background-color ease 0.3s;
 }
 
+.form-select-container > select {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 32px;
+    width: 100%;
+    background-color: var(--bg-color-light);
+    outline: 2px solid var(--accent-color-primary);
+    color: var(--accent-color-primary);
+}
+
+.form-select-container > select:hover {
+    outline: 3px solid var(--accent-color-primary);
+    cursor: pointer;
+}
+
 .form-input-container > input:hover {
     outline: 3px solid var(--accent-color-primary);
     background-color: var(--bg-color-light);
@@ -80,6 +95,18 @@ main {
     outline: 3px solid var(--accent-color-primary);
     background-color: var(--bg-color-light);
 }
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
 
 .form-main-btn-container {
     display: flex;
