@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend', Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --bg-color: #9dd6fb;
+    --bg-color-light: #fcfcfd;
+
+    --accent-color-primary: #2b75fa;
+    --accent-color-secondary: #1574f6;
+    --accent-color-tertiary: #e13229;
+}
+
+body {
+    background-color: var(--bg-color);
+    background-image: url('./pattern.svg');
+    background-position: 700px;
+    background-repeat: no-repeat;
+}
+
+#main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 24px;
+    box-shadow:
+        0px 1px 3px rgba(0, 0, 0, 0.2),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.12);
+    padding: 20px;
+    background-color: var(--bg-color-light);
+}
+
+#form-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-label-container > label {
+    font-weight: 600;
+    color: var(--accent-color-secondary);
+}
+
+.form-input-container > input {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 32px;
+    width: 100%;
+    background-color: var(--bg-color);
+    outline: 1px solid rgba(43, 117, 250, 0.50);
+    font-weight: 500;
+    color: var(--accent-color-primary);
+    transition: background-color ease 0.3s;
+}
+
+.form-input-container > input:hover {
+    outline: 3px solid var(--accent-color-primary);
+    background-color: var(--bg-color-light);
+}
+
+.form-input-container > input:focus {
+    outline: 3px solid var(--accent-color-primary);
+    background-color: var(--bg-color-light);
+}
+
+.form-main-btn-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.form-main-btn-container > button {
+    flex: 1;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 32px;
+    background-color: var(--accent-color-primary);
+    color: var(--bg-color-light);
+    cursor: pointer;
+}
