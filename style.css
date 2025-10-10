@@ -97,4 +97,32 @@ main {
     background-color: var(--accent-color-primary);
     color: var(--bg-color-light);
     cursor: pointer;
+    font-weight: 600;
+    transition: background-color ease 0.1s;
+}
+
+.form-main-btn-container > button[type="submit"]:hover {
+    background-color: var(--bg-color-light);
+    outline: 2px solid var(--accent-color-primary);
+    color: var(--accent-color-primary);
+}
+
+.form-main-btn-container > button[type="submit"]:active {
+    background-color: var(--accent-color-primary);
+    color: var(--bg-color-light);
+}
+
+.form-main-btn-container > button[type="reset"] {
+    background-color: var(--accent-color-tertiary);
+}
+
+.form-main-btn-container > button[type="reset"]:hover {
+    background-color: var(--bg-color-light);
+    outline: 2px solid var(--accent-color-tertiary);
+    color: var(--accent-color-tertiary);
+}
+
+.form-main-btn-container > button[type="reset"]:active {
+    background-color: var(--accent-color-tertiary);
+    color: var(--bg-color-light);
 }
