@@ -53,6 +53,38 @@ main {
     gap: 5px;
 }
 
+#form-decoration-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#form-logout-container > a {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 32px;
+    font-size: 1rem;
+    background-color: var(--accent-color-secondary);
+    cursor: pointer;
+    color: var(--bg-color-light);
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color, color, ease 0.1s;
+}
+
+#form-logout-container > a:hover {
+    background-color: var(--bg-color-light);
+    color: var(--accent-color-secondary);
+    outline: 3px solid var(--accent-color-secondary);
+}
+
+#form-logout-container > a:active {
+    background-color: var(--bg-color-light);
+    color: var(--accent-color-secondary);
+    outline: 3px solid var(--accent-color-secondary);
+}
+
 #form-title-container > h3 {
     color: var(--accent-color-primary);
 }
@@ -157,7 +189,7 @@ main {
     cursor: pointer;
     font-weight: 600;
     font-size: 1rem;
-    transition: background-color ease 0.1s;
+    transition: background-color, color, ease 0.1s;
 }
 
 .form-main-btn-container > button[type="submit"]:hover {
