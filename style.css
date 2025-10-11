@@ -93,6 +93,11 @@ main {
     font-size: 1.25rem;
 }
 
+#form-brand-icon-container > i.fa-water {
+    color: var(--accent-color-primary);
+    font-size: 1.25rem;
+}
+
 .form-label-container > label {
     font-weight: 600;
     font-size: 0.875rem;
