@@ -17,13 +17,13 @@
 }
 
 body {
-    background-color: var(--bg-color);
-    background-image: url('./public/pattern.svg');
-    background-position: 700px;
-    background-repeat: no-repeat;
+    background-image: linear-gradient(135deg, var(--accent-color-primary), var(--bg-color));
 }
 
 #main-container {
+    background-image: url('./public/pattern.svg');
+    background-repeat: no-repeat;
+    background-position: 750px;
     display: flex;
     justify-content: center;
     align-items: center;
