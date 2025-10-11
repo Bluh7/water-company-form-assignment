@@ -54,6 +54,10 @@ main {
     gap: 5px;
 }
 
+#form-title-container > h3 {
+    color: var(--accent-color-primary);
+}
+
 .form-label-container > label {
     font-weight: 600;
     font-size: 0.875rem;
