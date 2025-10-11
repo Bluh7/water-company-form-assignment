@@ -58,6 +58,9 @@ main {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    outline: 3px solid var(--accent-color-primary);
 }
 
 #form-logout-container > a {
@@ -80,8 +83,8 @@ main {
 }
 
 #form-logout-container > a:active {
-    background-color: var(--bg-color-light);
-    color: var(--accent-color-secondary);
+    background-color: var(--accent-color-secondary);
+    color: var(--bg-color-light);
     outline: 3px solid var(--accent-color-secondary);
 }
 
