@@ -90,6 +90,7 @@ main {
 
 #form-title-container > h3 {
     color: var(--accent-color-primary);
+    font-size: 1.25rem;
 }
 
 .form-label-container > label {
