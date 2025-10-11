@@ -77,8 +77,9 @@ main {
     border-radius: 32px;
     width: 100%;
     background-color: var(--bg-color-light);
-    outline: 2px solid var(--accent-color-primary);
+    outline: 1px solid rgba(43, 117, 250, 0.50);
     color: var(--accent-color-primary);
+    font-weight: 500;
 }
 
 .form-select-container > select:hover {
@@ -96,13 +97,13 @@ main {
     background-color: var(--bg-color-light);
 }
 
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
+.form-input-container input[type="number"]::-webkit-outer-spin-button,
+.form-input-container input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
 
-input[type="number"] {
+.form-input-container input[type="number"] {
     -moz-appearance: textfield;
     appearance: textfield;
 }
