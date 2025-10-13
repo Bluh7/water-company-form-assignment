@@ -231,6 +231,24 @@ main {
 }
 
 @media (max-width: 575.98px) {
+    #form-logout-container > a {
+        background-color: transparent;
+        outline: none;
+        color: var(--accent-color-secondary);
+    }
+
+    #form-logout-container > a:hover {
+        background-color: transparent;
+        color: var(--accent-color-secondary);
+        outline: none;
+    }
+    
+    #form-logout-container > a:active {
+        background-color: transparent;
+        color: var(--accent-color-secondary);
+        outline: none;
+    }
+
     #main-container {
         padding: 10px;
     }
