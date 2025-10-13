@@ -114,7 +114,7 @@ main {
     font-weight: 500;
     font-size: 1rem;
     color: var(--accent-color-primary);
-    transition: background-color ease 0.3s;
+    transition: background-color, ease 0.3s;
 }
 
 .form-select-container > select {
@@ -127,6 +127,7 @@ main {
     color: var(--accent-color-primary);
     font-size: 1rem;
     font-weight: 500;
+    transition: outline, ease, 0.1s
 }
 
 .form-select-container > select:hover {
