@@ -91,6 +91,7 @@ main {
 #form-title-container > h3 {
     color: var(--accent-color-primary);
     font-size: 1.25rem;
+    cursor: default;
 }
 
 #form-brand-icon-container > i.fa-water {
