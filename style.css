@@ -231,6 +231,10 @@ main {
 }
 
 @media (max-width: 575.98px) {
+    #main-container {
+        padding: 10px;
+    }
+
     #form-title-container > h3 {
         font-size: 1rem;
     }
