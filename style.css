@@ -170,6 +170,7 @@ main {
     overflow: hidden;
     border: none;
     outline: 1px solid rgba(43, 117, 250, 0.50);
+    transition: outline, ease, 0.1s;
 }
 
 .form-textarea-container > textarea:hover {
