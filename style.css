@@ -12,7 +12,7 @@
     --bg-color-light: #fcfcfd;
 
     --accent-color-primary: #2b75fa;
-    --accent-color-secondary: #e13229;
+    --accent-color-secondary: #dc3838;
 }
 
 body {
@@ -110,7 +110,6 @@ main {
     border: none;
     border-radius: 32px;
     width: 100%;
-    background-color: var(--bg-color);
     outline: 1px solid rgba(43, 117, 250, 0.50);
     font-weight: 500;
     font-size: 1rem;
@@ -138,12 +137,10 @@ main {
 
 .form-input-container > input:hover {
     outline: 3px solid var(--accent-color-primary);
-    background-color: var(--bg-color-light);
 }
 
 .form-input-container > input:focus {
     outline: 3px solid var(--accent-color-primary);
-    background-color: var(--bg-color-light);
 }
 
 .form-input-container input[type="number"]::-webkit-outer-spin-button,
@@ -232,6 +229,7 @@ main {
 
 @media (max-width: 575.98px) {
     #form-logout-container > a {
+        padding: 10px 5px;
         background-color: transparent;
         outline: none;
         color: var(--accent-color-secondary);
