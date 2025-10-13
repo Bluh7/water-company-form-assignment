@@ -226,3 +226,13 @@ main {
     background-color: var(--accent-color-secondary);
     color: var(--bg-color-light);
 }
+
+@media (max-width: 575.98px) {
+    #form-title-container > h3 {
+        font-size: 1rem;
+    }
+
+    .form-main-btn-container {
+        flex-direction: column;
+    }
+}
