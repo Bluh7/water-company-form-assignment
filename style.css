@@ -1,22 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Lexend', Arial, Helvetica, sans-serif;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
 }
 
 :root {
-    --bg-color: #9dd6fb;
-    --bg-color-light: #fcfcfd;
+    --bg-color: rgb(0, 136, 232);
+    --bg-color-light: #f5f5f7;
 
-    --accent-color-primary: #2b75fa;
-    --accent-color-secondary: #dc3838;
+    --text-color: #1d1d1f;
+
+    --accent-color-primary: rgb(30, 110, 244);
+    --accent-color-secondary: rgb(255, 56, 60);
+
+    --additional-color: rgb(209, 209, 214);
+    --outline-neutral-color: #c7c7cc;
 }
 
 body {
-    background-image: linear-gradient(135deg, var(--accent-color-primary), var(--bg-color));
+    background-image: linear-gradient(135deg, var(--bg-color), var(--bg-color-light));
 }
 
 #main-container {
@@ -58,50 +63,41 @@ main {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 12px;
-    border-radius: 12px;
-    outline: 3px solid var(--accent-color-primary);
+    padding: 0;
 }
 
 #form-logout-container > a {
     padding: 5px 10px;
     border: none;
     border-radius: 32px;
-    font-size: 1rem;
-    background-color: var(--accent-color-secondary);
+    font-size: 17px;
+    background-color: transparent;
     cursor: pointer;
-    color: var(--bg-color-light);
+    color: var(--accent-color-secondary);
     text-decoration: none;
-    font-weight: 600;
-    transition: background-color, color, ease 0.1s;
+    font-weight: normal;
+    transition: text-shadow, ease, 0.1s;
 }
 
 #form-logout-container > a:hover {
-    background-color: var(--bg-color-light);
-    color: var(--accent-color-secondary);
-    outline: 3px solid var(--accent-color-secondary);
-}
-
-#form-logout-container > a:active {
-    background-color: var(--accent-color-secondary);
-    color: var(--bg-color-light);
-    outline: 3px solid var(--accent-color-secondary);
+    text-shadow: 5px 1px 15px var(--outline-neutral-color);
 }
 
 #form-title-container > h3 {
     color: var(--accent-color-primary);
-    font-size: 1.25rem;
+    font-size: 20px;
+    font-weight: normal;
     cursor: default;
 }
 
 #form-brand-icon-container > i.fa-water {
     color: var(--accent-color-primary);
-    font-size: 1.25rem;
+    font-size: 20px;
 }
 
 .form-label-container > label {
     font-weight: 600;
-    font-size: 0.875rem;
+    font-size: 17px;
     color: var(--accent-color-primary);
 }
 
@@ -110,12 +106,11 @@ main {
     border: none;
     border-radius: 32px;
     width: 100%;
-    outline: 1px solid rgba(43, 117, 250, 0.50);
-    font-weight: 500;
-    font-size: 1rem;
-    color: var(--accent-color-primary);
+    outline: 1px solid var(--outline-neutral-color);
+    font-size: 17px;
+    color: var(--text-color);
     background-color: var(--bg-color-light);
-    transition: background-color, ease 0.3s;
+    transition: outline, ease 0.2s;
 }
 
 .form-select-container > select {
@@ -124,24 +119,18 @@ main {
     border-radius: 32px;
     width: 100%;
     background-color: var(--bg-color-light);
-    outline: 1px solid rgba(43, 117, 250, 0.50);
-    color: var(--accent-color-primary);
-    font-size: 1rem;
-    font-weight: 500;
-    transition: outline, ease, 0.1s
+    outline: 1px solid var(--outline-neutral-color);
+    color: var(--text-color);
+    font-size: 17px;
+    transition: outline, ease, 0.2s
 }
 
 .form-select-container > select:hover {
-    outline: 3px solid var(--accent-color-primary);
     cursor: pointer;
 }
 
-.form-input-container > input:hover {
-    outline: 3px solid var(--accent-color-primary);
-}
-
 .form-input-container > input:focus {
-    outline: 3px solid var(--accent-color-primary);
+    outline: 2px solid var(--accent-color-primary);
 }
 
 .form-input-container input[type="number"]::-webkit-outer-spin-button,
@@ -156,10 +145,8 @@ main {
 }
 
 .form-textarea-container > textarea {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    font-weight: 500;
-    color: var(--accent-color-primary);
+    font-size: 17px;
+    color: var(--text-color);
     background-color: var(--bg-color-light);
     width: 100%;
     min-height: 130px;
@@ -169,17 +156,13 @@ main {
     resize: none;
     overflow: hidden;
     border: none;
-    outline: 1px solid rgba(43, 117, 250, 0.50);
+    outline: 1px solid var(--outline-neutral-color);
     transition: outline, ease, 0.1s;
-}
-
-.form-textarea-container > textarea:hover {
-    outline: 3px solid var(--accent-color-primary);
 }
 
 .form-textarea-container > textarea:focus {
     border: none;
-    outline: 3px solid var(--accent-color-primary);
+    outline: 2px solid var(--accent-color-primary);
 }
 
 .form-main-btn-container {
@@ -198,14 +181,14 @@ main {
     background-color: var(--accent-color-primary);
     color: var(--bg-color-light);
     cursor: pointer;
-    font-weight: 600;
-    font-size: 1rem;
-    transition: background-color, color, ease 0.1s;
+    font-weight: normal;
+    font-size: 17px;
+    transition: background-color, outline, ease, 0.1s;
 }
 
 .form-main-btn-container > button[type="submit"]:hover {
     background-color: var(--bg-color-light);
-    outline: 3px solid var(--accent-color-primary);
+    outline: 1px solid var(--accent-color-primary);
     color: var(--accent-color-primary);
 }
 
@@ -215,38 +198,34 @@ main {
 }
 
 .form-main-btn-container > button[type="reset"] {
-    background-color: var(--accent-color-secondary);
+    background-color: var(--additional-color);
+    color: var(--text-color);
 }
 
 .form-main-btn-container > button[type="reset"]:hover {
     background-color: var(--bg-color-light);
-    outline: 3px solid var(--accent-color-secondary);
-    color: var(--accent-color-secondary);
+    outline: 1px solid var(--outline-neutral-color);
+    color: var(--text-color);
 }
 
 .form-main-btn-container > button[type="reset"]:active {
-    background-color: var(--accent-color-secondary);
-    color: var(--bg-color-light);
+    background-color: var(--additional-color);
+    color: var(--text-color);
 }
 
-@media (max-width: 575.98px) {
-    #form-logout-container > a {
-        padding: 10px 5px;
-        background-color: transparent;
-        outline: none;
-        color: var(--accent-color-secondary);
+@media (max-width: 1080px) {
+    #main-container {
+        background-position: 250px;
+    }
+}
+
+@media (max-width: 575.98px) and (orientation: portrait) {
+    #form-content-container {
+        gap: 20px;
     }
 
-    #form-logout-container > a:hover {
-        background-color: transparent;
-        color: var(--accent-color-secondary);
-        outline: none;
-    }
-    
-    #form-logout-container > a:active {
-        background-color: transparent;
-        color: var(--accent-color-secondary);
-        outline: none;
+    #form-logout-container > a {
+        padding: 10px 5px;
     }
 
     #main-container {
@@ -254,10 +233,24 @@ main {
     }
 
     #form-title-container > h3 {
-        font-size: 1rem;
+        font-size: 20px;
     }
 
     .form-main-btn-container {
         flex-direction: column;
+    }
+
+    .form-main-btn-container button {
+        transition: transform, ease, 0.50ms;
+    }
+
+    .form-main-btn-container button:active {
+        transform: scale(0.96);
+    }
+}
+
+@media (max-width: 343px) and (orientation: portrait) {
+    #form-title-container > h3 {
+        font-size: 18px;
     }
 }
