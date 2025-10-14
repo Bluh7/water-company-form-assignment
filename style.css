@@ -254,3 +254,9 @@ main {
         font-size: 18px;
     }
 }
+
+@media (max-width: 320px) and (orientation: portrait) {
+    #form-logout-container > a {
+        font-size: 15px;
+    }
+}
