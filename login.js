@@ -28,7 +28,7 @@ loginForm.addEventListener("submit", async e => {
     if (userName === defaultUser.username && userPass === defaultUser.password) {
         e.preventDefault();
         await cookieStore.set({ name: "user", value: defaultUser.token, path: "/" });
-        window.location.href = "/water-company-form-assignment";
+        window.location.href = "water-company-form-assignment";
     }
 
 });

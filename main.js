@@ -6,7 +6,7 @@ const checkUser = async () => {
     
     if (!users.includes(userToken) || !(userToken)) {
         await cookieStore.delete("user");
-        window.location.href = "/water-company-form-assignment/login.html";
+        window.location.href = "water-company-form-assignment/login.html";
         return;
     }
 }
