@@ -62,6 +62,8 @@ productQuantityInput.addEventListener("input", () => {
 });
 
 productForm.addEventListener("submit", e => {
+    checkUser();
+
     const productCode        = productCodeInput.value;
     const productName        = productNameInput.value;
     const productPrice       = productPriceInput.value;

@@ -1,3 +1,24 @@
+const users = ["e40da6f4-4a5e-4a8f-8156-360393242a8e"];
+
+const checkUser = async () => {
+    const user = await cookieStore.get("user");
+    const userToken = user?.value;
+
+    if (!userToken) return;
+
+    if (userToken && users.includes(userToken)) {
+        window.location.href = "index.html";
+        return;
+    }
+
+    if (userToken && !users.includes(userToken)) {
+        await cookieStore.delete("user");
+        return;
+    }
+}
+
+checkUser();
+
 const userNameInput = document.querySelector('[name="usuario"]');
 const userPassInput = document.querySelector('[name="usuario_senha"]');
 
