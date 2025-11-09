@@ -34,7 +34,6 @@ productCodeInput.addEventListener("input", () => {
 
 productNameInput.addEventListener("input", () => {
     productNameInput.value = productNameInput.value.replace(/[^A-Za-zÀ-ÖØ-öø-ÿ0-9 ]/g, "");
-    productNameInput.value = productNameInput.value.replace(/ +$/, "");
 });
 
 productPriceInput.addEventListener("input", () => {
@@ -65,10 +64,10 @@ productForm.addEventListener("submit", e => {
     checkUser();
 
     const productCode        = productCodeInput.value;
-    const productName        = productNameInput.value;
+    const productName        = productNameInput.value.trim();
     const productPrice       = productPriceInput.value;
     const productQuantity    = productQuantityInput.value;
-    const productDescription = productDescriptionTextarea.value;
+    const productDescription = productDescriptionTextarea.value.trim();
 
     if (!productCode || !productName || !productPrice || !productQuantity || !productDescription) {
         e.preventDefault();
