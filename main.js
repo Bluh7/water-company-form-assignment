@@ -21,7 +21,9 @@ const productCategorySelect      = document.querySelector('[name="produto_catego
 const productManufacturerSelect  = document.querySelector('[name="produto_fabricante"]');
 const productDescriptionTextarea = document.querySelector('[name="produto_descricao"]');
 
-const productForm = document.getElementById("produto-form");
+const productForm  = document.getElementById("produto-form");
+
+document.getElementById("logout-button").addEventListener("click", async () => { await cookieStore.delete("user"); });
 
 const productCategories    = ["galao", "torneira_registro", "bomba_pressurizador", "filtro_purificador", "torre_bebedouro"];
 const productManufacturers = ["brita", "electrolux", "tigre", "lorenzetti", "igua"];
